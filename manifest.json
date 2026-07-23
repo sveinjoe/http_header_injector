@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "HTTP Header Injector",
+  "version": "1.0.0",
+  "description": "为所有请求添加或修改自定义 HTTP 头部信息",
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "HTTP Header Injector",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "http-header-injector@example.com",
+      "strict_min_version": "115.0"
+    }
+  }
+}
